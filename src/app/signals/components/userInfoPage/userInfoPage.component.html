@@ -11,7 +11,7 @@
   <div class="col-8" *ngIf="currentUser()">
     <h3>Usuario:</h3>
     <p>Correo: {{ currentUser()!.email }}</p>
-    <p>Nombre: fullName()</p>
+    <p>Nombre: {{fullName()}}</p>
 
     <img [src]="currentUser()!.avatar" alt="Avatar" class="rounded">
   </div>
